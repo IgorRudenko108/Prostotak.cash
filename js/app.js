@@ -279,7 +279,7 @@
             animOnScroll();
         }), 300);
     }
-    window["FLS"] = true;
+    window["FLS"] = false;
     isWebp();
     menuInit();
     headerScroll();
