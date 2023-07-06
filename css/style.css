@@ -237,6 +237,12 @@ body {
           justify-content: center;
 }
 
+body {
+  position: relative;
+  height: auto;
+  min-height: auto;
+}
+
 body::after {
   content: "";
   position: absolute;
@@ -245,7 +251,8 @@ body::after {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: auto;
   background: rgba(185, 185, 185, 0.7);
   z-index: 12;
   display: none;
@@ -253,7 +260,8 @@ body::after {
 
 .lock body::after {
   display: block;
-  height: 100%;
+  height: auto;
+  min-height: auto;
 }
 
 ._anim-show--up {
